@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+@font-face {
+    font-family: 'Otomanopee';
+    src: url(Fonte/ttf/OtomanopeeOne-Regular.ttf) format(truetype);
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    font-family: 'Sen';
+}
+
+main {
+    flex: 1;
+}
+
+/*Header*/
+header {
+    background-color: #157267;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.divLogo,
+.divAtalhos,
+.divCadastro {
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.divLogo {
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.divAtalhos {
+    justify-content: center;
+    gap: 30px;
+}
+
+.divCadastro {
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.navAtalhos {
+    font-size: 17px;
+    color: white;
+    font-family: 'Sen';
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navAtalhos:hover {
+    color: #ffe1aa;
+}
+
+.navAtalhosAtivo {
+    font-size: 17px;
+    color: #ffd891;
+    font-family: 'Sen';
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.cadastro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 60%;
+    width: 125px;
+    font-size: 15px;
+    background-color: #002722;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cadastro:hover {
+    background-color: #ffffff;
+    color: #002722;
+}
+
+.headerCadastro {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.divLogoCadastro {
+    height: 100%;
+    display: flex;
+}
+
+
+/*Index*/
+.sectionIndex1 {
+    flex: 1;
+    background-image: url(imagens/fundo1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    box-shadow: inset 0 0 800px rgba(0, 0, 0, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    font-family: 'Otomanopee';
+    font-weight: normal;
+    font-size: 100px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.sectionIndex2 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sectionIndex2a {
+    flex: 1;
+    justify-content: right;
+    margin-right: 80px;
+    display: flex;
+}
+
+.sectionIndex2b {
+    flex: 1;
+    margin-left: 80px;
+}
+
+.h2Index {
+    font-family: 'Otomanopee';
+    font-size: 35px;
+    margin-bottom: -10px;
+    background: linear-gradient(to bottom, #ffce72, #644000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.h3Index {
+    font-family: 'Otomanopee';
+    background: linear-gradient(to bottom, #00BFA8, #003E36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+}
+
+.textoIndex1 {
+    width: 70%;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Sen';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.botaoIndex {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #157267;
+    color: white;
+    font-family: 'Sen';
+    text-decoration: none;
+}
+
+.botaoIndex:hover {
+    background-color: #003E36;
+}
+
+.sectionIndex3 {
+    display: flex;
+    flex: 1;
+    background-image: url(imagens/fundo2.svg);
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 1200px rgba(0, 0, 0, 10);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sectionIndex3a {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tituloVertical {
+    font-family: 'Otomanopee';
+    margin-left: 0;
+    font-size: 150px;
+    color: #F5F5F5;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.sectionIndex3b {
+    margin-top: 50px;
+    margin-right: 50px;
+    text-align: right;
+    width: 50%;
+    height: 100%;
+    justify-content: left;
+}
+
+.subTitulo1,
+.subTitulo2 {
+    font-family: 'Otomanopee';
+    margin: 0;
+    color: #F5F5F5;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+.subTitulo1 {
+    font-size: 50px;
+}
+
+.subTitulo2 {
+    font-size: 100px;
+}
+
+.sectionIndex4 {
+    margin-top: 230px;
+    margin-bottom: 230px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionIndex4a {
+    margin-left: 180px;
+}
+
+.textoIndex2 {
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Sen';
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.sectionIndex4b {
+    margin-left: 30px;
+    display: flex;
+    align-items: end;
+}
+
+.produtoIndex {
+    width: 275px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.produtoIndex:hover {
+    transform: translateY(-50px);
+}
+
+
+/*Sobre Nós*/
+.sectionSobre1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+}
+
+.sectionSobre1a {
+    justify-content: right;
+    margin-right: 1%;
+}
+
+.sectionSobre1b {
+    margin-left: 1%;
+}
+
+.h2Sobre1a {
+    font-size: 70px;
+    font-family: 'Otomanopee';
+    background: linear-gradient(to bottom, #ffce72, #644000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.h2Sobre1b {
+    font-size: 120px;
+    font-family: 'Otomanopee';
+    background: linear-gradient(to bottom, #ffce72, #644000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.sectionSobre2 {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.h3Section {
+    font-family: 'Otomanopee';
+    background: linear-gradient(to bottom, #00BFA8, #003E36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+}
+
+.textoSobre1 {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.textoSobre2 {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 7%;
+}
+
+.link {
+    font-family: 'Sen';
+    color: #00b39e;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline 1.2px;
+}
+
+
+/*Produtos*/
+.sectionProdutos1 {
+    display: flex;
+    height: 700px;
+}
+
+.sectionProdutos1a {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sectionProdutos1b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.h1Produtos {
+    font-family: 'Otomanopee';
+    font-size: 30px;
+    background: linear-gradient(to bottom, #00BFA8, #003E36);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.h2Produtos {
+    font-family: 'Otomanopee';
+    background: linear-gradient(to bottom, #ffce72, #644000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+
+.textoProdutos {
+    font-family: 'Otomanopee';
+    font-size: 16px;
+}
+
+.opcoes {
+    display: flex;
+    gap: 10px;
+}
+
+.option {
+    font-family: 'Otomanopee';
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid #007D6E 1px;
+    color: #007D6E;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 17px 10px 17px;
+    margin-bottom: 25px;
+}
+
+.optionAtivado {
+    font-family: 'Otomanopee';
+    background-color: #007D6E;
+    border-radius: 5px;
+    border: solid #007D6E 1px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px 17px 10px 17px;
+    margin-bottom: 25px;
+}
+
+.option:hover {
+    background-color: #007D6E;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+}
+
+.atributo {
+    width: 40%;
+    margin-bottom: 35px;
+}
+
+.h2Produtos2 {
+    font-family: 'Otomanopee';
+    color: #003E36;
+    margin-bottom: 35px;
+}
+
+.comprar {
+    font-family: 'Otomanopee';
+    background-color: #007D6E;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+}
+
+.comprar:hover {
+    background-color: #003E36;
+}
+
+.sectionProdutos2 {
+    flex: 1;
+    background-image: url(imagens/produtos/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 800px rgba(0, 0, 0, 10);
+}
+
+.textoVerde{
+    color:#003E36;
+}
+
+.sloganProdutos{
+    font-family: 'Otomanopee';
+    font-weight: normal;
+    font-size: 60px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subSloganProdutos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    width: 50%;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+/*Criadores*/
+
+.mainCria{
+    height: 100%;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome{
+    margin-top: -30px;
+}
+
+.pergaminho{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.flexCria {
+    display: flex;
+}
+
+.itemCarro {
+    min-width: 100%;
+    height: 100%;
+}
+
+.escrituras{
+    display:block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    color: #157267;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*Footer*/
+footer {
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #157267;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    margin: 10px 0;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.icons a {
+    margin: 0 15px;
+}
+
+.pFooter {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.contatos {
+    display: flex;
+    color: white;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.contatos2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.subFooter {
+    height: 40px;
+    width: 100%;
+    background-color: #04413b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+.pFooter {
+    color: white;
+    font-size: 11px;
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}

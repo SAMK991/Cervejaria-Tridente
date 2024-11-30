@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervejaria Tridente - Sobre</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <a href="Index.html" class="divLogo">
+            <img src="imagens/logo.svg" width="200px" alt="Logo da Cervejaria Tridente">
+        </a>
+        <div class="divAtalhos">
+            <a href="Sobre.html" class="navAtalhos">SOBRE</a>
+            <a href="Produtos.html" class="navAtalhos">NOSSOS PRODUTOS</a>
+            <a href="Criadores.html" class="navAtalhosAtivo">CRIADORES</a>
+        </div>
+        <div class="divCadastro">
+            <a href="Cadastro.html" class="cadastro">CADASTRE-SE</a>
+        </div>
+    </header>
+    <main>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="itemCarro">
+                        <div class="flexCria">
+                            <div class="perfil">
+                                <img src="imagens/criadores/marco.svg" width="450px">
+                                <img src="imagens/criadores/nomeMarco.svg" width="650px" class="nome">
+                            </div>
+                            <div class="pergaminho">
+                                <img src="imagens/criadores/textoMARCO.svg" width="750px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCarro">
+                        <div class="flexCria">
+                            <div class="perfil">
+                                <img src="imagens/criadores/pedro.svg" width="450px">
+                                <img src="imagens/criadores/nomePedro.svg" width="650px" class="nome">
+                            </div>
+                            <div class="pergaminho">
+                                <img src="imagens/criadores/textoPEDRO.svg" width="750px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCarro">
+                        <div class="flexCria">
+                            <div class="perfil">
+                                <img src="imagens/criadores/rafael.svg" width="450px">
+                                <img src="imagens/criadores/nomeRafael.svg" width="650px">
+                            </div>
+                            <div class="pergaminho">
+                                <img src="imagens/criadores/textoRAFAEL.svg" width="750px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCarro">
+                        <div class="flexCria">
+                            <div class="perfil">
+                                <img src="imagens/criadores/ryan.svg" width="450px">
+                                <img src="imagens/criadores/nomeRyan.svg" width="650px">
+                            </div>
+                            <div class="pergaminho">
+                                <img src="imagens/criadores/textoRYAN.svg" width="750px">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCarro">
+                        <div class="flexCria">
+                            <div class="perfil">
+                                <img src="imagens/criadores/samuel.svg" width="450px">
+                                <img src="imagens/criadores/nomeSamuel.svg" width="650px">
+                            </div>
+                            <div class="pergaminho">
+                                <img src="imagens/criadores/textoSAMUEL.svg" width="750px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.itemCarro');
+
+            function moveSlide(direction) {
+                currentSlide += direction;
+
+                if (currentSlide >= slides.length) {
+                    currentSlide = 0;  // Retorna para a primeira imagem
+                } else if (currentSlide < 0) {
+                    currentSlide = slides.length - 1;  // Vai para a última imagem
+                }
+
+                const offset = -currentSlide * 100;
+                document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+            }      
+        </script>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://encurtador.com.br/KX7AF"><img src="imagens/footer/facebook.svg" width="45px"></a>
+            <a href="https://encurtador.com.br/uhRn6"><img src="imagens/footer/instagram.svg" width="45px"></a>
+            <a href="https://encurtador.com.br/VsNlQ"><img src="imagens/footer/twitter.svg" width="45x"></a>
+        </div>
+        <div>
+            <p class="pFooter">220 Parque Moderador SRR-PM, Residência 29 • Platina, São Paulo - Brasil</p>
+        </div>
+        <div class="contatos">
+            <div class="contatos2">
+                <img src="imagens/footer/telefone.svg" width="40px">
+                <p>(18) 99705 - 0292</p>
+            </div>
+            <div class="contatos2">
+                <img src="imagens/footer/email.svg" width="40px">
+                <p>cervatrident@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <a href="Index.html">
+                <img src="imagens/logo.svg" width="275px" alt="Logo da Cervejaria Tridente">
+            </a>
+        </div>
+        <div class="subFooter">
+            <div>
+                <p class="pFooter">Todos os direitos reservados ©Cervejaria Tridente 2024</p>
+            </div>
+            <div>
+                <p class="pFooter">Beba com moderação. Não compartilhe este conteúdo com menores de idade.</p>
+            </div>
+            <div>
+                <p class="pFooter">Desenvolvido por: Marco, Pedro, Rafael, Ryan e Samuel</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervejaria Tridente - Produtos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <a href="Index.html" class="divLogo">
+            <img src="imagens/logo.svg" width="200px" alt="Logo da Cervejaria Tridente">
+        </a>
+        <div class="divAtalhos">
+            <a href="Sobre.html" class="navAtalhos">SOBRE</a>
+            <a href="Produtos.html" class="navAtalhosAtivo">NOSSOS PRODUTOS</a>
+            <a href="Criadores.html" class="navAtalhos">CRIADORES</a>
+        </div>
+        <div class="divCadastro">
+            <a href="Cadastro.html" class="cadastro">CADASTRE-SE</a>
+        </div>
+    </header>
+    <main>
+        <div class="sectionProdutos1">
+            <div class="sectionProdutos1a">
+                <img src="imagens/produtos/garrafa.svg" width="500px">
+            </div>
+            <div class="sectionProdutos1b">
+                <div>
+                    <h1 class="h1Produtos">TRIDENTE ATLANTIDA PURO MALTE</h1>
+                    <h2 class="h2Produtos">ATLANTIDA 350ML</h2>
+                    <p class="textoProdutos">DISPONÍVEL EM:</p>
+                    <div class="opcoes">
+                        <button type="button" class="optionAtivado" onclick="garrafa()">350ML</button>
+                        <button type="button" class="option" onclick="latinha()">355ML</button>
+                        <button type="button" class="option" onclick="caneca()">600ML</button>
+                    </div>
+                    <div class="flex">
+                        <div class="atributo">
+                            <p class="textoProdutos">AMARGOR (IBU)<b class="textoVerde">16.00</b></p>
+                            <img src="imagens/produtos/amargor.svg" width="275px">
+                        </div>
+                        <div class="atributo">
+                            <p class="textoProdutos">CORPO: <b class="textoVerde">(1)</b></p>
+                            <img src="imagens/produtos/corpo.svg" width="300px">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="atributo">
+                            <p class="textoProdutos">TEOR ALCÓLICO</p>
+                            <h2 class="h2Produtos2">5,20%</h2>
+                        </div>
+                        <div class="atributo">
+                            <p class="textoProdutos">TEMPERATURA</p>
+                            <h2 class="h2Produtos2">0-4 °C</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="comprar" onclick="comprar()">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="sectionProdutos2">
+            <h1 class="sloganProdutos">O ESTILO FORTE QUE<br>ATRAVESSOU O TEMPO</h1>
+            <h3 class="subSloganProdutos">Foram Pedro Salomão e Rafael Ambrozim, os visionários que criaram o estilo
+                Tridente: uma cerveja Puro Malte, de cor esverdeada, refrescante e de sabor
+                forte, com um toque de suavidade.</h3>
+        </div>
+        <div class="sectionProdutos3">
+            
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://encurtador.com.br/KX7AF"><img src="imagens/footer/facebook.svg" width="45px"></a>
+            <a href="https://encurtador.com.br/uhRn6"><img src="imagens/footer/instagram.svg" width="45px"></a>
+            <a href="https://encurtador.com.br/VsNlQ"><img src="imagens/footer/twitter.svg" width="45x"></a>
+        </div>
+        <div>
+            <p class="pFooter">220 Parque Moderador SRR-PM, Residência 29 • Platina, São Paulo - Brasil</p>
+        </div>
+        <div class="contatos">
+            <div class="contatos2">
+                <img src="imagens/footer/telefone.svg" width="40px">
+                <p>(18) 99705 - 0292</p>
+            </div>
+            <div class="contatos2">
+                <img src="imagens/footer/email.svg" width="40px">
+                <p>cervatrident@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <a href="Index.html">
+                <img src="imagens/logo.svg" width="275px" alt="Logo da Cervejaria Tridente">
+            </a>
+        </div>
+        <div class="subFooter">
+            <div>
+                <p class="pFooter">Todos os direitos reservados ©Cervejaria Tridente 2024</p>
+            </div>
+            <div>
+                <p class="pFooter">Beba com moderação. Não compartilhe este conteúdo com menores de idade.</p>
+            </div>
+            <div>
+                <p class="pFooter">Desenvolvido por: Marco, Pedro, Rafael, Ryan e Samuel</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function comprar() {
+            window.location.href = "https://www.ze.delivery/produtos/marca/spaten";
+        }
+
+        function garrafa() {
+            window.location.href = "Produtos.html"
+        }
+
+        function latinha() {
+            window.location.href = "Latinha.html"
+        }
+
+        function caneca() {
+            window.location.href = "Caneca.html"
+        }
+    </script>
+</body>
+
+</html>
